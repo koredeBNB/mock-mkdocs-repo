@@ -17,6 +17,7 @@ The function returns a dictionary with these fields:
 - `validator_id`: the validator identifier passed by the caller.
 - `status`: the validator status. The current demo value is `active`.
 - `commission_rate`: the validator commission rate.
+- `reward_rate`: the validator reward rate.
 
 Example response:
 
@@ -24,7 +25,8 @@ Example response:
 {
   "validator_id": "validator-1",
   "status": "active",
-  "commission_rate": 0.05
+  "commission_rate": 0.05,
+  "reward_rate": 0.12
 }
 ```
 
