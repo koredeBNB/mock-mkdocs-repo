@@ -28,6 +28,24 @@ Example response:
 }
 ```
 
+## Try it: interactive playground
+
+Run the API and inspect the response without leaving the docs.
+
+<iframe
+  src="https://bnb-chain.github.io/techops-docsite-interactive-playground/?validator=validator-1"
+  width="100%"
+  height="720"
+  style="border: 1px solid #ddd; border-radius: 8px;"
+  loading="lazy"
+></iframe>
+
+<p>
+  <a href="https://bnb-chain.github.io/techops-docsite-interactive-playground/" target="_blank">
+    Open the playground in a new tab
+  </a>
+</p>
+
 ## Documentation Update Test
 
 For the end-to-end demo, change the source API in `mock-bsc-app`, merge the change into `main`, and confirm the GitHub App opens a pull request against this documentation repo.
