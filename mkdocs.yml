@@ -1,0 +1,8 @@
+site_name: Mock BNB Chain Docs
+site_description: Mock MkDocs site for testing AI-generated docsite updates.
+repo_url: https://github.com/koredeBNB/mock-mkdocs-repo
+theme:
+  name: mkdocs
+nav:
+  - Home: index.md
+  - Validators: validators.md
