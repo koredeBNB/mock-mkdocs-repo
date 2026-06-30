@@ -6,6 +6,7 @@ It documents the public behavior of the mock source repository:
 
 - Source repo: [koredeBNB/mock-bsc-app](https://github.com/koredeBNB/mock-bsc-app)
 - Main documented API: `get_validator_status`
+- New API: `get_gas_fee_status`
 
 ## Demo Goal
 
