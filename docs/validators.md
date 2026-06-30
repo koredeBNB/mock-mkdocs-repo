@@ -17,6 +17,12 @@ The function returns a dictionary with these fields:
 - `validator_id`: the validator identifier passed by the caller.
 - `status`: the validator status. The current demo value is `active`.
 - `commission_rate`: the validator commission rate.
+- `voting_power`: the validator's current voting power.
+- `delegator_count`: the number of delegators currently attached to the validator.
+- `uptime_percent`: the validator uptime percentage.
+- `jailed_bnb`: whether the validator is currently jailed.
+- `slashable`: whether the validator is currently slashable.
+- `reward_rate`: the validator reward rate.
 
 Example response:
 
@@ -24,7 +30,13 @@ Example response:
 {
   "validator_id": "validator-1",
   "status": "active",
-  "commission_rate": 0.05
+  "commission_rate": 0.05,
+  "voting_power": 1000,
+  "delegator_count": 25,
+  "uptime_percent": 99.9,
+  "jailed_bnb": false,
+  "slashable": false,
+  "reward_rate": 0.12
 }
 ```
 
