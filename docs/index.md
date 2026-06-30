@@ -5,7 +5,7 @@ This documentation site is used to test the AI docsite update GitHub App.
 It documents the public behavior of the mock source repository:
 
 - Source repo: [koredeBNB/mock-bsc-app](https://github.com/koredeBNB/mock-bsc-app)
-- Main documented API: `get_validator_status`
+- Main documented API: `get_validator_status` and `get_gas_fee_status`
 
 ## Demo Goal
 
