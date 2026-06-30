@@ -45,7 +45,7 @@ Example response:
 Run the API and inspect the response without leaving the docs.
 
 <iframe
-  src="https://bnb-chain.github.io/techops-docsite-interactive-playground/?validator=validator-1"
+  src="https://koredebnb.github.io/techops-docsite-interactive-playground/?validator=validator-1"
   width="100%"
   height="720"
   style="border: 1px solid #ddd; border-radius: 8px;"
@@ -53,7 +53,7 @@ Run the API and inspect the response without leaving the docs.
 ></iframe>
 
 <p>
-  <a href="https://bnb-chain.github.io/techops-docsite-interactive-playground/" target="_blank">
+  <a href="https://koredebnb.github.io/techops-docsite-interactive-playground/" target="_blank">
     Open the playground in a new tab
   </a>
 </p>
