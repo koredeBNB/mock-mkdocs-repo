@@ -1,38 +1,36 @@
-# Gas Fees
+# Block Sync
 
-The mock BSC app exposes a gas fee status API.
+The mock BSC app exposes a block synchronization status API.
 
-## `get_gas_fee_status`
+## `get_block_sync_status`
 
-Use `get_gas_fee_status` to read current gas fee information.
+Use `get_block_sync_status` to read the current block synchronization status.
 
 ```python
-from mock_bsc_app.gas_fees import get_gas_fee_status
+from mock_bsc_app.block_sync import get_block_sync_status
 
-status = get_gas_fee_status("bnb-smart-chain")
+status = get_block_sync_status("bnb-smart-chain")
 ```
 
 The function returns a dictionary with these fields:
 
 - `network`: the network identifier passed by the caller.
-- `base_fee_gwei`: the base fee in gwei.
-- `priority_fee_gwei`: the priority fee in gwei.
-- `estimated_total_fee_gwei`: the estimated total fee in gwei.
-- `congestion_level`: the current network congestion level.
-- `sample_block`: a sample block number.
-- `fee_trend`: the direction the fee is moving (e.g. `"rising"`).
+- `latest_block`: the most recent block number seen by the node.
+- `safe_block`: the latest block considered safe.
+- `finalized_block`: the latest finalized block number.
+- `sync_lag_blocks`: the number of blocks the node is behind the chain tip.
+- `is_syncing`: whether the node is currently syncing.
 
 Example response:
 
 ```json
 {
   "network": "bnb-smart-chain",
-  "base_fee_gwei": 3.5,
-  "priority_fee_gwei": 1.1,
-  "estimated_total_fee_gwei": 4.6,
-  "congestion_level": "medium",
-  "sample_block": 39126000,
-  "fee_trend": "rising"
+  "latest_block": 39126000,
+  "safe_block": 39125920,
+  "finalized_block": 39125810,
+  "sync_lag_blocks": 80,
+  "is_syncing": false
 }
 ```
 
