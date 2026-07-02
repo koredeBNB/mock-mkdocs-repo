@@ -7,3 +7,4 @@ nav:
   - Home: index.md
   - Validators: validators.md
   - Gas Fees: gas-fees.md
+  - Block Sync: block-sync.md
